@@ -4,11 +4,28 @@ import '../styles/home.css';
 function Home() {
     return (
         <div className="Home">
-            <h1 className="title">Home page</h1>
-            <h2 className="title">Welcome to my to do app</h2>
-            <h3 className="title">Please Register or Login to access the app</h3>
 
-        </div>
+            <div className="notes-background">
+                <h2 className="title">To Do App</h2>
+                <a className='main-btn' href='/register'>
+                    Get Started
+                </a>
+
+                <div className="pins">
+                    <div className="pin"></div>
+                    <div className="pin"></div>
+                    <div className="pin"></div>
+                    <div className="pin"></div>
+                </div>
+                <div className="notes-icon">
+                    <div className="line"></div>
+                    <div className="line"></div>
+                    <div className="line"></div>
+                    <div className="line"></div>
+                </div>
+
+            </div>
+        </div >
     );
 }
 

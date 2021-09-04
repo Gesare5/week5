@@ -2,6 +2,7 @@ import React from 'react';
 // import { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router-dom';
+import '../styles/login.css';
 // import { AppContext } from '../components/stateProvider';
 
 function Login() {
@@ -36,11 +37,13 @@ function Login() {
         history.push("/home");
     };
     return (
-        <div>
-            <h1>Login page</h1>
-            <form onSubmit={handleSubmit(login)}>
+        <div className="login-container">
+
+            <form onSubmit={handleSubmit(login)} className="login-form">
+                <h1 className="login">Login</h1>
                 <div>
                     <input
+                        className="unn"
                         type='text'
                         placeholder='email'
                         required
@@ -49,13 +52,14 @@ function Login() {
                 </div>
                 <div>
                     <input
+                        className="passw"
                         type='password'
                         placeholder='password'
                         required
                         {...register('password')}
                     />
                 </div>
-                <input type='submit' value='Login' />
+                <input className="submit" type='submit' value='Login' />
             </form>
         </div>
     );

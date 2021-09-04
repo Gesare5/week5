@@ -1,5 +1,5 @@
 const styleObject = {
-    backgroundColor: 'rgb(202,156,24)',
+    backgroundColor: '#6F6FC8',
     //color: '#333',
     fontSize: '20px',
     fontFamily: 'inherit',

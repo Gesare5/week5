@@ -1,7 +1,8 @@
 .list{
     color: #fff;
     width: 300px;
-    background-color: #2679a0;
+    background: #272636;
+    /* background:linear-gradient(to top right, #525255, #15151d);  */
     height: 50px;
     margin: 20px auto;
     border-radius: 5px;
@@ -35,5 +36,6 @@
     font-size: 18px;
     font-weight: bolder;
     border: 'none';
-    background-color: #e98d04;
+    color: white;
+    background-color: #6F6FC8;
 }

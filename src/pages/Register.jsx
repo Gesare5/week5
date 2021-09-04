@@ -45,45 +45,52 @@ const Register = () => {
 
     return (
         <>
-            <div className='container__child signup__form'>
-                <form onSubmit={handleSubmit(registerUser)}>
+            <div className="register-container">
+                <form className="main-form" onSubmit={handleSubmit(registerUser)}>
+                    <h1 className="register">Register</h1>
                     <div className='form-group'>
                         <label htmlFor='email'>Email</label>
                         <input
-                            className='form-control'
+                            className='uname'
                             type='text'
                             name='email'
                             id='email'
-                            placeholder='john.doe@newe.com'
+
                             {...register('email', { required: true })}
                         />
                     </div>
                     <div className='form-group'>
                         <label htmlFor='password'>Password</label>
                         <input
-                            className='form-control'
+                            className='pass'
                             type='password'
                             name='password'
                             id='password'
-                            placeholder='********'
+
                             {...register('password', { required: true })}
                         />
                     </div>
                     <div className='form-group'>
-                        <label htmlFor='passwordRepeat'>Repeat Password</label>
+                        <label htmlFor='passwordRepeat'>Confirm Password</label>
                         <input
-                            className='form-control'
+                            className='pass'
                             type='password'
                             name='passwordRepeat'
                             id='passwordRepeat'
-                            placeholder='********'
+
                             {...register('confirmPassword', { required: true })}
                         />
                     </div>
-                    <div className='m-t-lg'>
-                        <ul className='list-inline'>
+                    <button className='btn--form' type='submit'>
+                        Register
+                    </button>
+                    <a className='login__link' href='/login'>
+                        I already have an account
+                    </a>
+                    {/* <div className='m-t-lg'> */}
+                    {/* <ul className='list-inline'>
                             <li>
-                                <button className='btn btn--form' type='submit'>
+                                <button className='btn--form' type='submit'>
                                     Register
                                 </button>
                             </li>
@@ -92,8 +99,8 @@ const Register = () => {
                                     I already have an account
                                 </a>
                             </li>
-                        </ul>
-                    </div>
+                        </ul> */}
+                    {/* </div> */}
                 </form>
             </div>
         </>

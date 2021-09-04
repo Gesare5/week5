@@ -1,14 +1,15 @@
 
 
 .app{
-  background-color: #2e1688;
+  background-color: #201E2C;
   min-height: 500px;
   width: 400px;
   margin: 40px auto;
+  border-radius: 1em;
 }
 
 #to-do input{
-  background-color: rgb(73, 71, 196);
+  background-color: #3A3A4C;
   border: 0;
   width: 200px;
   height: 50px;

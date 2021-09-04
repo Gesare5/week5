@@ -1,7 +1,7 @@
 // import { useContext } from 'react';
 // import { AppContext } from './stateProvider';
 import { Link, useHistory } from 'react-router-dom';
-
+import to from '../to-do-logo.png';
 function Navbar() {
 
     // I KEPT GETTING A TYPE-OBJECT ERROR I COULDNT FIX IT SO I OPTED TO COMMENT THE PARTS AFFECTED
@@ -22,6 +22,7 @@ function Navbar() {
     // SO NOW ALL THE LINKS GET DISPLAYED ANG THE LOGOUT FUNCTION REALLY DOESN'T DO MUCH
     return (
         <nav>
+            <img src={to} alt="" />
             <Link className="navlink" to="/home">Home</Link>
 
             {/* {!state.isLoggedIn ? ( */}

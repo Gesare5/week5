@@ -1,20 +1,16 @@
-.register-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
 }
-
-.form-group{
- display: flex;
-  flex-direction: column;
-  text-align: center;
- }
-.main-form {
+.login-form {
         background-color: #201E2C;
         width: 400px;
-        height: 500px;
-        margin-top: 50px;
+        height: 400px;
+        margin-top: 40px;
+        
         border-radius: 1.5em;
         display: flex;
         flex-direction: column;
@@ -23,47 +19,43 @@
         box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
     }
     
-  .main-form label {
-        /* background-color: rgba(186, 135, 216, 0.3); */
-        /* padding-top: 40px;*/
-        color: #6F6FC8;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: bold;
-        /* font-size: 20px; */
-        
-    }
-    .register{
-        padding-bottom: 1.5em;
+  .login{
+       
+        padding-top: 40px;
+        padding-bottom: 2em;
         color: #6F6FC8;
         font-family: 'Ubuntu', sans-serif;
         font-weight: bold;
         font-size: 23px;
+        /* text-align: center; */
     }
     
-    .uname {
+    .unn {
     width: 76%;
     color: rgba(111,111,200,0.9);
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 1px;
     background: #272636;
+    /* background: rgba(213, 172, 240, 0.1); */
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
     outline: none;
     box-sizing: border-box;
     border: 2px solid rgba(111,111,200,0.28);
-    margin-bottom: 2.5em;
+    margin-bottom: 50px;
     margin-left: 46px;
     text-align: center;
+    /* margin-bottom: 27px; */
     font-family: 'Ubuntu', sans-serif;
     }
     
-    /* form.form1 {
+    form.form1 {
         padding-top: 40px;
-    } */
+    }
     
-    .pass {
+    .passw {
             width: 76%;
     color: rgba(111,111,200,0.9);
     font-weight: 700;
@@ -80,35 +72,29 @@
     margin-left: 46px;
     text-align: center;
     margin-bottom: 27px;
-    font-family: inherit;
+    font-family: 'Ubuntu', sans-serif;
     }
     
    
-    .un:focus, .pass:focus {
+    .unn:focus, .passw:focus {
         border: 2px solid rgba(111,111,200, 0.90) !important;
         
     }
     
-    .btn--form{
+    .submit{
       cursor: pointer;
         border-radius: 5em;
         color: #fff;
+        font-weight: bold;
         background: #6F6FC8;
         border: 0;
-        padding: 10px 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-top: 10px;
         font-family: inherit;
-        font-weight: bold;
         font-size: 16px;
-        margin-bottom: 10px;
         box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
     }
-.login__link
-{
-text-decoration: none;
-list-style-type: none;
-color: #6F6FC8;
-}
-.login__link:hover
-{
-  color: #a7a7ec;
-}
